@@ -1,0 +1,224 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    flex-direction: Column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('BACKGROUND WEBSITE IMAGE.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    height: 150px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    flex: 1;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.product{
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+img.centered {
+    display: block;
+    margin: 20px auto;
+}
+
+button, a.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+body:not(.white-bg) nav a:hover {
+    color: #fff;
+}
+
+.meat-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.meat-item {
+  position: relative;
+  width: 200px;
+  text-align: center;
+}
+
+.meat-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.meat-item .caption {
+  opacity: 0;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+  transition: opacity 0.3s ease;
+}
+
+.meat-item:hover .caption {
+  opacity: 1;
+}
+
+.site-footer {
+    background-color: #ffffff00; 
+    color: #00000083;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.meat-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.meat-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.meat-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.meat-category {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.meat-category:hover {
+    transform: scale(1.05);
+}
+
+.meat-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.meat-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.meat-category ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
