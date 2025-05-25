@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    display: flex;
     flex-direction: Column;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -224,73 +223,4 @@ body:not(.white-bg) nav a:hover {
     font-size: 16px;
 }
 
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row; 
-        overflow-x: auto;   
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-
-   nav a {
-        margin: 0 10px;
-        white-space: nowrap; /* Prevent line breaks */
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .logo {
-        height: 100px;
-        width: auto;
-    }
-
-    h1, h2 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 14px;
-        text-align: justify;
-    }
-
-    .main-content {
-        padding: 40px 15px;
-    }
-
-    .meat-item,
-    .meat-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .meat-gallery {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .meat-category {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    img.centered {
-        width: 90%;
-        height: auto;
-    }
-
-    .site-footer {
-        font-size: 12px;
-        padding: 10px;
-    }
-}
 
